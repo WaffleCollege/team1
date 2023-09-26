@@ -90,6 +90,40 @@
             messageElement.textContent = `今日は${dailyMessages[date.getDay()] || "曜日情報が取得できませんでした。"} 充実した${hourlyMessage}をお過ごしください`;
         </script>
     </div>
+    <div id = "share">
+        <p>SNSでシェア</p>
+
+    <!-- twitter -->
+    <a
+        id="js-share-twitter"
+        class="share_button share_twitter"
+        href=""
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+        onclick="share_twitter()"
+        >Twitterで共有する</a
+    >
+    <!--facebook -->
+    <a
+        id="js-share-facebook"
+        class="share_button share_facebook"
+        href=""
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+        onclick="share_facebook"
+        >Facebookでシェアする</a
+    >
+    <!-- line -->
+    <a
+        id="js-share-line"
+        class="share_button share_line"
+        href=""
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+        onclick="share_line"
+        >LINEで送る</a
+    >
+    </div>
 </body>
 
 </html>

@@ -135,3 +135,34 @@ function showFood() {
 //     // メッセージをhtmlで表示
 //     messageElement.textContent = `今日は${dailyMessages[date.getDay()] || "曜日情報が取得できませんでした。"} 充実した${hourlyMessage}をお過ごしください`;
 // }
+
+
+
+// twitter
+function share_twitter(){
+    const share_twitter = document.getElementById("js-share-twitter");
+    let title = "a"
+    share_twitter.setAttribute(
+        "href",
+        "http://twitter.com/share?url=kyounogohan.com&text="+title+"&via=&hashtags=今日のごはん"
+    );
+    }
+    
+    // facebook
+    function share_facebook(){
+    const share_facebook = document.getElementById("js-share-facebook");
+    share_facebook.setAttribute(
+        "href",
+        "http://www.facebook.com/share.php?u=kyounogohan.com&text=食べるご飯を決めた！&via=&hashtags=今日のごはん"
+    );
+    }
+    
+    // line
+    function share_line(){
+    const share_line = document.getElementById("js-share-line");
+    share_line.setAttribute(
+        "href",
+        "https://social-plugins.line.me/lineit/share?url=yurukei-career.com&text=食べるご飯を決めた！&via=&hashtags=今日のごはん"
+    );
+    }
+    
